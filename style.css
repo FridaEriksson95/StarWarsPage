@@ -1,0 +1,259 @@
+/*Fonts*/
+@import url('https://fonts.cdnfonts.com/css/tears-in-rain');
+@import url('https://fonts.cdnfonts.com/css/balisong');
+@import url('https://fonts.cdnfonts.com/css/gastino');
+@import url('https://fonts.cdnfonts.com/css/gamon-trial');
+@import url('https://fonts.cdnfonts.com/css/requla-diary');
+/* Background*/
+body {
+    background: url('./pictures/starwars1.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+/*Star Wars header*/
+h1 {
+    font-family: 'Tears in Rain', sans-serif;
+    font-size: 95px;
+    background: linear-gradient(177deg, rgb(139, 237, 139), rgb(60, 73, 60));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+h1:hover {
+    border-bottom: 0.3em solid transparent;
+    border-top: 0.3em solid transparent;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+/*Music 'Press Me','Stop music' button*/
+#playPauseButton {
+    border: 1em;
+    border-radius: 2em;
+    padding: 0.5em;
+    color: white;
+    background: rgb(58, 102, 67);
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.1em;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+#playPauseButton:hover,
+#playPauseButton:active {
+    border-bottom: 0.3em solid transparent;
+    border-top: 0.3em solid transparent;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    border-radius: 2em;
+    background: white;
+    color: rgb(58, 102, 67);
+    font-weight: bold;
+}
+/*Serachfield block*/
+.searchField {
+    font-family: 'Requla Diary', sans-serif;
+    width: 300px;
+    border: 2px solid rgb(24, 58, 9);
+    border-radius: 0.5em;
+    padding: 0.7em;
+    margin: 0em 0em 1em;
+    font-size: 29px;
+    text-align: center;
+}
+/*Obi-wan search button*/
+#people-button {
+    font-family: 'Gamon Trial', sans-serif;
+    border: 3em;
+    border-radius: 2em;
+    padding: 1.2em;
+    color: white;
+    background: rgb(58, 102, 67);
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.1em;
+}
+#people-button:hover {
+    border-bottom: 0.3em solid transparent;
+    border-top: 0.3em solid transparent;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    border-radius: 2em;
+    background: white;
+    color: rgb(58, 102, 67);
+    font-weight: bold;
+}
+/*information box providing character info*/
+.aboutInfo {
+    font-family: 'Balisong', sans-serif;
+    border: 3px solid black;
+    border-radius: 2em;
+    padding: 3em;
+    background: black;
+    color:rgb(77, 97, 77);
+    margin: 2em 2.3em 2em;
+    text-align: center;
+    font-size: 22px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.aboutInfo:hover {
+    border-bottom: 0.3em solid transparent;
+    border-top: 0.3em solid transparent;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    border-radius: 2em;
+}
+/*Suggestions on character header*/
+h2 {
+    font-family: 'Gamon Trial', sans-serif;
+    font-size: 42px;
+    background: linear-gradient(177deg, rgb(60, 73, 60), rgb(139, 237, 139));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+/*CSS for pictures of charachters*/
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top left; 
+    margin-bottom: 2em;
+    
+}
+img:hover{
+    border-bottom: 0.3em solid transparent;
+    border-top: 0.3em solid transparent;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    border-radius: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+/*Sidebar - sections for prepare to be killed button*/
+.uGotKilled {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    margin-right: 5em;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transform: translateY(-50%);
+}
+/*Giph from i dare you click*/
+.styled-iframe {
+    width: 100%;
+    height: 180px; 
+    border: 4em; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    margin-top: 20px; 
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+}
+.styled-iframe:hover {
+    border-bottom: 0.3em solid transparent;
+    border-top: 0.3em solid transparent;
+    cursor: pointer;
+    border-radius: 2em;
+    box-shadow: 50px 44px 28px rgba(0, 0, 0, 0.5);
+}
+/*Prepare to be killed button*/
+#killMeButton {
+    font-family: 'Gamon Trial', sans-serif;
+    border: none;
+    border-radius: 1em;
+    padding: 2em 8em;
+    color: white;
+    background: rgb(21, 22, 21);
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.1em;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+}
+#killMeButton::before {
+    content: 'Prepare to be killed';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+#killMeButton::after {
+    content: 'I DARE YOU';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+#killMeButton:hover::before {
+    opacity: 0;
+}
+#killMeButton:hover::after {
+    opacity: 1;
+}
+/*making sure killMeButton moves along with page scrolling*/
+@media screen and (min-width: 768px) {
+    #killMeButton.fixed {
+        position: fixed;
+        top: 90px; 
+        right: 20px; 
+        z-index: 999; 
+        transition: top 3s ease, right 3s ease;
+    }
+}
+/*Learn more link*/
+#readMore {
+    border: 1em;
+    border-radius: 2em;
+    padding: 0.5em;
+    background: rgb(58, 102, 67);
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.1em;
+    margin: 2.5em;
+    cursor: pointer;
+}
+#readMore:hover {
+    border-bottom: 0.3em solid transparent;
+    border-top: 0.3em solid transparent;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    border-radius: 2em;
+    background: white;
+    font-weight: bold;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(58, 102, 67);
+    text-decoration: none;
+}

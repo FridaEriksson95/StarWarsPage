@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="module" src="script.js"></script>
+    <title>Star Wars</title>
+</head>
+<body>
+       <section id="content">
+         <h1>Star Wars API</h1>
+<!--Music-->
+         <button id="playPauseButton"><i class="fa-solid fa-music"></i><span> Press Me</span></button>
+         <audio id="starWarsMusic" src="Star Wars Intro HD 1080p.mp3" type="audio/mp3"></audio>
+<!--Searchfield with charactername-->  
+         <input class="searchField" type="text" placeholder="Enter your favorite Star Wars character">
+<!-- Obi Button-->
+         <button id="people-button"> Help Me Obi-Wan!</button>
+<!--Resultfield of search--> 
+        <p class="aboutInfo"> no results yet</p>
+<!--Recommendations of characters with pictures-->
+        <h2>Don't know who to choose? Suggestions down below!</h2>
+        <div class="pickMe">
+            <img src="pictures/Obi-WanKenobi.webp" alt="Obi-Wan Kenobi" title="Obi-Wan Kenobi">
+            <img src="pictures/LukeSkywalker.webp" alt="Luke Skywalker" title="Luke Skywalker">
+            <img src="pictures/padméAmidala.webp" alt="Padmé Amidala" title="Padmé Amidala">
+            <img src="pictures/palpatine.webp" alt="Palpatine" title="Palpatine">
+            <img src="pictures/R2-D2.png" alt="R2-D2" title="R2-D2">
+            <img src="pictures/Chewbacca.png" alt="Chewbacca" title="Chewbacca">
+            <img src="pictures/Leia_Organa.webp" alt="Leia Organa" title="Leia Organa">
+            <img src="pictures/hansolo.png" alt="Han Solo" title="Han Solo">
+            <img src="pictures/DarthMaul.webp" alt="Darth Maul" title="Darth Maul">
+            <img src="pictures/C-3PO.png" alt="C-3PO" title="C-3PO">
+            <img src="pictures/Darth_Vader.png" alt="Darth Vader" title="Darth Vader">
+            <img src="pictures/yoda.png" alt="Yoda" title="Yoda">
+            <img src="pictures/JarJar.webp" alt="JarJar" title="Jar Jar Binks">
+            <img src="pictures/JabbaTheHutt.webp" alt="Jabba the hutt" title="Jabba Desilijic Tiure">
+            <img src="pictures/BobaFett.webp" alt="Boba Fett" title="Boba Fett">
+            <img src="pictures/Qui-Gon_Jinn.webp" alt="Qui-Gon Jinn" title="Qui-Gon Jinn">
+        </div>
+        <button id="readMore"><a href="https://www.timeout.com/film/star-wars-characters-list" target="_blank">Learn More about your favorite Characters here <i class="fa-solid fa-parachute-box"></i></a></button>
+    </section>
+<!--Prepare to be killed button-->
+    <section class="uGotKilled">
+       <button id="killMeButton"></button>
+    </section>
+</body>
+</html>
